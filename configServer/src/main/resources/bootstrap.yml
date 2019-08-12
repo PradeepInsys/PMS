@@ -2,4 +2,4 @@ server:
   port: 8888
 spring:
   application:
-    name: ms-config-server
+    name: config-server

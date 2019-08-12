@@ -1,25 +1,11 @@
 spring:
-  profiles:
-    active: native
----
-spring:
-  profiles: native
-  cloud:
-    config:
-      server:
-        native:
-          search-locations:
-            file://PATH_TO_MICROSERVICES_PROJECT/ms-config-properties/{application}/{profile},
-            file://PATH_TO_MICROSERVICES_PROJECT/ms-config-properties/global/{profile}
----
-spring:
-  profiles: git
+  profiles: 
+     active: native
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/isilona/microservices/
+          uri: https://github.com/PradeepInsys/PMS/
           search-paths:
-            - "ms-config-properties/{application}/{profile}"
-            - "ms-config-properties/global/{profile}"
+            - "config-properties/authServer/default/dev"
 
